@@ -8,7 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    
+    NSStatusItem *_statusItem;
+    NSTimer *_mailTimer;
+    
+    NSDate* _newMailDate;
+}
+
 
 @property (assign) IBOutlet NSWindow *window;
 
